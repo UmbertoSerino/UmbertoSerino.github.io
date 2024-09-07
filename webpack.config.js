@@ -2,7 +2,7 @@ const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-    mode: 'development', // O 'production'
+    mode: 'development',
     entry: './src/main.js',
     output: {
         filename: 'bundle.js',
@@ -24,6 +24,6 @@ module.exports = {
         extensions: ['.js', '.json', '.vue']
     },
     plugins: [
-        new VueLoaderPlugin() // Assicurati che questo plugin sia incluso
+        new VueLoaderPlugin()
     ]
 };
